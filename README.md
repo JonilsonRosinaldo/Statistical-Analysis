@@ -17,7 +17,7 @@ The Report can be found both at the end of this file and in the Word Document. Y
 
 ## Business Context and Questions
 ### Business Context
-The company believes implemented new machines would reduce the average overtime (in minutes) that the workers will do, which will lead to a cost reduction in the end. They tried it in a group of 200 workers, which shows an average overtime of 6300 minutes. 
+The company believes implemented new machines will reduce the average overtime (in minutes) that the workers will do, which will lead to a cost reduction in the end. They tried it in a group of 200 workers, which shows an average overtime of 6300 minutes. 
 #### Question 1
 Can we say that the company is right in it's belief?
 
