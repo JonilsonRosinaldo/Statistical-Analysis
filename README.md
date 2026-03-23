@@ -43,17 +43,12 @@ Finally, for the last question selecting the features influencing the most the p
 Here, normalising the data would be very beneficial when I create the model but before normalising the features I first had to proceed with the feature selection. This way I could assure that the relationships between the features and target were preserved at the time of the feature selection to later benefit my regression model. I also wanted to check which score function for the SelectKBest class would provide the best feature selection for my model. I knew that according to the visualisations performed before (the scatter plots), the only features that seem to have a linear relationship with the 'actual productivity' feature were the 'incentive' and the 'targeted productivity'. Therefore, I utilized two different feature selection score functions: the ‘f_regression’ for linear relationships and the ‘mutual_info_regression’ for non-linear relationships and see which one would select the best features for my model. Initially I chose ‘mutual_info_regression’ because most of the feature didn’t seem to have a linear relationship with the target variable. The model which performed the best was the Random Forest with the features suggested by the ‘mutual_info_regression’ score function, hyperparameter k=10 and a score of 84.91% of R-squared suggesting that the Random Forest explains 84.91% of the variance on the data. However, the results flipped when applied cross-validation, emphasising the impact there is when the most appropriate techniques are applied. At this time the the models using the features suggested by F1 Regression were performing better even though the R-Squared scores were marginally lower for the best performing model (83.06% for random forest) there was more certaitly on the better stability of the model which is crutial for attaining the business goals.
 
 #### Possible experimentations
-Hiper Parameter tunning could have been applied as well as trying with different values for cross validation.
-
-Different models could have been tested such as XGBoost to improved performance given the fact that gradient boosting would seek to correct flaws of previous trees. 
-
-SVM could also consist and interesting alternative to explore due to some light sparcity created with the one hot encoding and the capabilities to to uncover non-linear patterns however, I decided not to include becuase this model would not directly provide feature importance which is critical to answer one of the business question. Even though other approaches could have been taken to obtain the feature importance after using a SVM model.
-
-As a matter of keeping the model as simple and explainable possible both statistical models were left aside.
-
-Class Imbalance could have been a bit more addressed even though was not a top priority.
-
-Model Evaluation could have had more metrics and more methods tested
+* Hiper Parameter tunning could have been applied as well as trying with different values for cross validation.
+* Different models could have been tested such as XGBoost to improved performance given the fact that gradient boosting would seek to correct flaws of previous trees. 
+* SVM could also consist and interesting alternative to explore due to some light sparcity created with the one hot encoding and the capabilities to to uncover non-linear patterns however, I decided not to include becuase this model would not directly provide feature importance which is critical to answer one of the business question. Even though other approaches could have been taken to obtain the feature importance after using a SVM model.
+* As a matter of keeping the model as simple and explainable possible both statistical models were left aside.
+* Class Imbalance could have been a bit more addressed even though was not a top priority.
+* Model Evaluation could have had more metrics and more methods tested
 
 ### Wrap up
 Overall, the analysis went well and the aims were attained even though having into consideration that some approaches would have required more analysis, research and deeper dig into business understanding together with the stakeholders, so as a matter of simplicity, time constraint and showing accomplishment of the business goals I had to simplify the steps and make assumptions (in some cases to explore the options available and approached I would take if an oposite scenario was presented) which in a real case shouldn’t have been made and I am cognizant of that. With this analysis I could also understand how critical the choice of our approach is for the success of the analysis.
